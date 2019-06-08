@@ -1,0 +1,19 @@
+.mapPin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: red;
+  position: absolute;
+  transform: rotate(-45deg);
+  margin: 0 0 0 -20px;
+  margin-left:-16px;
+}
+.mapPin:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin: 8px 0 0 7px;
+  background: #303030;
+  position: absolute;
+  border-radius: 50%;
+}
