@@ -16,6 +16,7 @@ class OneMarker extends Component{
         this.props.updateTabOpen(true);
         this.props.updateZoom(11);
         this.props.updateFocus(this.props.markerData.lngLat[0],this.props.markerData.lngLat[1]);
+        this.props.updateCurrentPin(this.props.markerData.name)
     }
 
     componentDidUpdate(){
@@ -74,6 +75,7 @@ const mapDispatchToProps = dispatch => ({
     updateTabOpen:(bool)=>dispatch(actionCreators.updateTabOpen(bool)),
     updateZoom:(zoom)=>dispatch(actionCreators.updateZoom(zoom)),
     updateFocus: (lng,lat) => dispatch(actionCreators.updateFocus(lng,lat)),
+    updateCurrentPin: (pin) => dispatch(actionCreators.updateCurrentPin(pin)),
     clearSelection: () => dispatch(actionCreators.updateSearchBarResult(null))
 })
 

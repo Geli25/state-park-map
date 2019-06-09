@@ -10,6 +10,7 @@ const initialState = {
     tabOpen:false,
     showAllMarkers:false,
     searchbarResult:null,
+    currentPin:null
 }
 
 
@@ -44,6 +45,11 @@ const reducer = (curState = initialState, action) => {
                 ...curState,
                 showAllMarkers:!curState.showAllMarkers
             }
+        case actionTypes.TURNON_SHOWALL:
+            return{
+                ...curState,
+                showAllMarkers:true
+            }
         case actionTypes.UPDATE_TABOPEN:
             return{
                 ...curState,
@@ -53,6 +59,11 @@ const reducer = (curState = initialState, action) => {
             return{
                 ...curState,
                 searchbarResult:action.searchbarResult
+            }
+        case actionTypes.UPDATE_CURRENTPIN:
+            return{
+                ...curState,
+                currentPin:action.pin
             }
         case actionTypes.RESTORE_MAPCONFIG:
             return{

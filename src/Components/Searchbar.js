@@ -31,7 +31,7 @@ class SearchBar extends Component{
         return(
             <Downshift
                 onChange={selection => {
-                    this.setState({open:false})
+                    this.props.updateCurrentPin(selection.value);
                     this.props.selectResult(selection.value)}}
                 itemToString={item => (item ? item.value : '')}
             >
@@ -53,7 +53,8 @@ class SearchBar extends Component{
                             <TextField
                                 style={{width:"100%"}}
                                 variant="outlined"
-                                onClick={()=>this.setState({open:true})}
+                                onClick={()=>this.props.turnOnShowAll()}
+                                label="Park Name"
                                 placeholder="Search for a park name here"
                                 InputLabelProps={getLabelProps()}
                                 InputProps={getInputProps()} />
@@ -76,10 +77,8 @@ class SearchBar extends Component{
                                                     index,
                                                     item,
                                                     style: {
-                                                        backgroundColor:
-                                                        highlightedIndex === index ? 'lightgray' : 'white',
+                                                        backgroundColor: 'white',
                                                         padding:10,
-                                                        fontWeight: selectedItem === item ? 'bold' : 'normal',
                                                     },
                                                 })}
                                             >
@@ -96,7 +95,9 @@ class SearchBar extends Component{
 }
 
 const mapDispatchToProps=dispatch=>({
-    selectResult: (result) => dispatch(actionCreators.updateSearchBarResult(result))
+    selectResult: (result) => dispatch(actionCreators.updateSearchBarResult(result)),
+    updateCurrentPin:(pin)=>dispatch(actionCreators.updateCurrentPin(pin)),
+    turnOnShowAll:()=>dispatch(actionCreators.turnOnShowall())
 })
 
 export default connect(null,mapDispatchToProps)(SearchBar);

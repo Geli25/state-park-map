@@ -27,9 +27,18 @@ export const toggleShowAll=()=>({
     type: actionTypes.TOGGLE_SHOWALL,
 })
 
+export const turnOnShowall=()=>({
+    type: actionTypes.TURNON_SHOWALL
+})
+
 export const updateSearchBarResult=(result)=>({
     type:actionTypes.UPDATE_SEARCHBARRESULT,
     searchbarResult:result
+})
+
+export const updateCurrentPin=(pin)=>({
+    type:actionTypes.UPDATE_CURRENTPIN,
+    pin:pin
 })
 
 export const restoreMapConfig=()=>({
