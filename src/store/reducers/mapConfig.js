@@ -1,4 +1,4 @@
-// import * as actionTypes from '../actions/actionTypes';
+import * as actionTypes from '../actions/actionTypes';
 // import stateUpdater from '../../utility/stateUpdater';
 
 const initialState = {
@@ -7,50 +7,66 @@ const initialState = {
         lat: 35.49645434723877
     },
     zoom: [6],
-    tabOpen:false
+    tabOpen:false,
+    showAllMarkers:false,
+    searchbarResult:null,
 }
 
 
 const reducer = (curState = initialState, action) => {
-    // switch (action.type) {
-    //     case actionTypes.UPDATE_IMAGE_PAIRS:
-    //         return stateUpdater(curState, {
-    //             imagePairs: action.imagePairs
-    //         })
-    //     case actionTypes.UPDATE_IMAGE_NAMES:
-    //         return stateUpdater(curState, {
-    //             imageNames: action.imageNames
-    //         })
-    //     case actionTypes.UPDATE_PROCESSING_TIME:
-    //         return stateUpdater(curState, {
-    //             processingTime: action.processingTime
-    //         })
-    //     case actionTypes.UPDATE_IMAGE_SIZES:
-    //         return stateUpdater(curState, {
-    //             imageSizes: action.imageSizes
-    //         })
-    //     case actionTypes.UPDATE_HISTOGRAMS:
-    //         return stateUpdater(curState, {
-    //             histograms: action.histograms
-    //         })
-    //     case actionTypes.UPDATE_UPLOAD_TIME:
-    //         return stateUpdater(curState, {
-    //             uploadTime: action.uploadTime
-    //         })
-    //     case actionTypes.CLEAR_RETURNED_DATA: {
-    //         return {
-    //             imagePairs: [],
-    //             imageNames: [],
-    //             processingTime: null,
-    //             imageSizes: [],
-    //             histograms: [],
-    //             uploadTime: null
-    //         };
-    //     }
-    //     default:
-    //         return curState;
-    // }
-    return curState;
+    switch (action.type) {
+        case actionTypes.UPDATE_FOCUS:
+            return {
+                ...curState,
+                focus:{
+                    ...curState.focus,
+                    lng:action.lng,
+                    lat:action.lat
+                }
+            }
+        case actionTypes.UPDATE_ZOOM:
+            return {
+                ...curState,
+                zoom:[action.zoom]
+            }
+        case actionTypes.UPDATE_FOCUSZOOM:
+            return{
+                ...curState,
+                zoom:[action.zoom],
+                focus:{
+                    ...curState.focus,
+                    lng:action.lng,
+                    lat:action.lat
+                }
+            }
+        case actionTypes.TOGGLE_SHOWALL:
+            return{
+                ...curState,
+                showAllMarkers:!curState.showAllMarkers
+            }
+        case actionTypes.UPDATE_TABOPEN:
+            return{
+                ...curState,
+                tabOpen:action.tabOpen
+            }
+        case actionTypes.UPDATE_SEARCHBARRESULT:
+            return{
+                ...curState,
+                searchbarResult:action.searchbarResult
+            }
+        case actionTypes.RESTORE_MAPCONFIG:
+            return{
+                ...curState,
+                focus: {
+                    lng: -80.49453737816452,
+                    lat: 35.49645434723877
+                },
+                zoom: [6],
+                tabOpen: false,
+            }
+        default:
+            return curState;
+    }
 }
 
 export default reducer;

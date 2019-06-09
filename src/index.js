@@ -5,12 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
-import { createStore, compose, combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
 
 import mapConfig from './store/reducers/mapConfig';
-
-
-const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose);
 
 const rootReducer = combineReducers({
     mapConfig
