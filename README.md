@@ -2,9 +2,13 @@
 
 Created by Angelina (Chang) Liu
 
+Live Version of this app published at:
+
+[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
+
 ### Running the web app locally ###
 
-** Note: To run the application locally, you would need to have the following dependencies: **
+**Note: To run the application locally, you would need to have the following dependencies:**
 
 * [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
@@ -25,9 +29,6 @@ npm start OR yarn start
 
 This will open a web browser on your computer, which should then run smoothly!
 
-Live Version of this app published at:
-
-[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
 
 ### Dependencies used:
 
