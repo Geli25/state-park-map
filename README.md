@@ -4,9 +4,12 @@ Created by Angelina (Chang) Liu
 
 ### Running the web app locally ###
 
-**Note: To run the application locally, you would need to have the following dependencies: ***
+**Note: To run the application locally, you would need to have the following dependencies:**
+
 *[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-*[npm](https://www.npmjs.com/get-npm) / [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable)
+
+*[npm](https://www.npmjs.com/get-npm) / [yarn]
+(https://yarnpkg.com/lang/en/docs/install/#windows-stable)
 
 Click on the dependency for installation instructions.
 
@@ -23,14 +26,20 @@ npm start OR yarn start
 
 This will open a web browser on your computer, which should then run smoothly!
 
-OR simply experience it here:
-[North Carolina State Park Live](https://geli25.github.io/state-park-map/)
+Live Version of this app published at:
+
+[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
 
 ### Dependencies used:
+
 *Redux/React-Redux
+
 *Mapbox-GL/React-Mapbox- GL
+
 *DownShift
+
 *Material-UI
+
 *gh-pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
