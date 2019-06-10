@@ -4,12 +4,11 @@ Created by Angelina (Chang) Liu
 
 ### Running the web app locally ###
 
-**Note: To run the application locally, you would need to have the following dependencies:**
+** Note: To run the application locally, you would need to have the following dependencies: **
 
-*[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-*[npm](https://www.npmjs.com/get-npm) / [yarn]
-(https://yarnpkg.com/lang/en/docs/install/#windows-stable)
+* [npm](https://www.npmjs.com/get-npm) OR [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable)
 
 Click on the dependency for installation instructions.
 
