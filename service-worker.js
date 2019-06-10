@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/state-park-map/precache-manifest.9f38a60a1eb57faf6257e646940572b9.js"
+  "/state-park-map/precache-manifest.b71012d70382399d6a7476c94ec97dc1.js"
 );
 
 self.addEventListener('message', (event) => {
