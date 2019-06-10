@@ -11,8 +11,20 @@ import SearchBar from './Searchbar';
 import { Button } from '@material-ui/core';
 
 const MapPage = (props) => (
-    <React.Fragment>
+    <div style={{
+        height:"100%",
+        width:"100%",
+        backgroundColor:"#d9dbdd",
+        margin:0,
+        position:"absolute",
+    }}>
         <Button
+            style={{
+                marginLeft:10,
+                marginTop:10,
+                position:"fixed",
+                zIndex:20
+            }}
             variant="contained"
             color="secondary"
             onClick={()=>props.updateAppState(false)}>
@@ -21,7 +33,7 @@ const MapPage = (props) => (
         </Button>
         <SearchBar />
         <MapDisplay />
-    </React.Fragment>
+    </div>
 )
 const mapDispatchToProps = dispatch => ({
     updateAppState: (bool) => dispatch(actionCreators.updateAppState(bool))

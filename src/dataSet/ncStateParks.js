@@ -335,7 +335,7 @@ const ncStateParks = [
         address: "8801 Glenwood Avenue, Raleigh, NC 27617",
         hours: "Mon-Sun 7AM-9PM",
         website: "https://www.ncparks.gov/william-b-umstead-state-park",
-        zoomLevel: 0 //hard
+        zoomLevel: -1 //hard
     },
 
 
