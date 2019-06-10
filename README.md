@@ -1,4 +1,4 @@
-# State Park Interactive Map Project
+# North Carolina State Park Interactive Map Project
 
 Created by Angelina (Chang) Liu
 
