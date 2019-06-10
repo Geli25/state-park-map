@@ -2,6 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 // import stateUpdater from '../../utility/stateUpdater';
 
 const initialState = {
+    usingApp:false,
     focus: {
         lng: -80.49453737816452,
         lat: 35.49645434723877
@@ -16,6 +17,11 @@ const initialState = {
 
 const reducer = (curState = initialState, action) => {
     switch (action.type) {
+        case actionTypes.UPDATE_APPSTATE:
+            return{
+                ...curState,
+                usingApp:action.appState
+            }
         case actionTypes.UPDATE_FOCUS:
             return {
                 ...curState,

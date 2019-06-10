@@ -40,4 +40,15 @@ This will open a web browser on your computer, which should then run smoothly!
 
 * gh-pages
 
+### About this app:
+
+In this simple web app, you will be able to see all state parks in North Carolina on the map.
+When you first enter the app, the marker rendering is dynamic, meaning that the more you zoom in, the more markers will show up in an area. To show all pins at once, simply toggle the "Always show all pins" switch. You can also:
+
+* Drag, click and zoom to navigate the map
+
+* Click on any marker on the map to get more information about the park
+
+* Search for a park in the search bar and open the corresponding park information.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

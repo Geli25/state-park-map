@@ -9,7 +9,7 @@ const AllMarkers=(props)=>{
         if (props.showAll){
             return <OneMarker key={marker.name} markerData={marker} />
         }
-        else if ((!props.showAll&&marker.zoomLevel<props.zoom)||props.currentPin===marker.name){
+        else if (!props.showAll&&(marker.zoomLevel<props.zoom||props.currentPin===marker.name)){
             console.log(props.currentPin === marker.name);
             return <OneMarker key={marker.name} markerData={marker} />
         }

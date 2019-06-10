@@ -1,5 +1,10 @@
 import * as actionTypes from './actionTypes';
 
+export const updateAppState=(bool)=>({
+    type:actionTypes.UPDATE_APPSTATE,
+    appState:bool
+})
+
 export const updateFocus = (lng,lat) => ({
     type: actionTypes.UPDATE_FOCUS,
     lng: lng,

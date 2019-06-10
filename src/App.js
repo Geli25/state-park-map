@@ -1,15 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 
-import MapDisplay from './Components/MapDisplay';
-import SearchBar from './Components/Searchbar';
+import AppWrapper from './Components/AppWrapper';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" />
-      <SearchBar />
-      <MapDisplay />
+      <AppWrapper />
     </div>
   );
 }
