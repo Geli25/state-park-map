@@ -51,7 +51,10 @@ class SearchBar extends Component{
                             marginTop: 10
                             }}>
                             <TextField
-                                style={{width:"100%"}}
+                                style={{
+                                    width:"100%",
+                                    backgroundColor:"white"
+                                }}
                                 variant="outlined"
                                 onClick={()=>this.props.turnOnShowAll()}
                                 label="Park Name"
