@@ -2,7 +2,7 @@
 
 Created by Angelina (Chang) Liu
 
-Live Version of this app published at:[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
+Live Version of this app published at: [https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
 
 ### Running the web app locally ###
 
