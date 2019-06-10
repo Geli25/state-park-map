@@ -2,9 +2,7 @@
 
 Created by Angelina (Chang) Liu
 
-Live Version of this app published at:
-
-[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
+Live Version of this app published at:[https://geli25.github.io/state-park-map/](https://geli25.github.io/state-park-map/)
 
 ### Running the web app locally ###
 
@@ -32,14 +30,14 @@ This will open a web browser on your computer, which should then run smoothly!
 
 ### Dependencies used:
 
-*Redux/React-Redux
+* Redux/React-Redux
 
-*Mapbox-GL/React-Mapbox- GL
+* Mapbox-GL/React-Mapbox- GL
 
-*DownShift
+* DownShift
 
-*Material-UI
+* Material-UI
 
-*gh-pages
+* gh-pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
